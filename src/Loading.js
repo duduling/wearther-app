@@ -13,11 +13,16 @@ const LoadingText = styled.Text`
     color: #2c2c2c;
     font-size: 28px;
 `
+
+const CustomStatusBar = styled.StatusBar`
+
+`
 // #endregion
 
 const Loading = () => {
     return (
         <Container>
+            <CustomStatusBar barStyle={'dark-content'} />
             <LoadingText>Getting the weather...</LoadingText>
         </Container>
     )
